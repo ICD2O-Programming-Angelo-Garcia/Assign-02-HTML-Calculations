@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Volume of a Cylinder with JavaScript" />
+    <meta name="keywords" content="volume, cylinder, JS, calculation" />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volume of a Cylinder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Volume of a Cylinder Calculator</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <h1>Calculate the Volume of a Cylinder</h1>
+
+        <form id="cylinder-form">
+          <p>Enter the Radius:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="radius"
+              step="0.01"
+            />
+            <label class="mdl-textfield__label" for="radius">Radius of Cylinder</label>
+            <span class="mdl-textfield__error">Input is not a valid number!</span>
+          </div>
+
+          <p>Enter the Height:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="height"
+              step="0.01"
+            />
+            <label class="mdl-textfield__label" for="height">Height of Cylinder</label>
+            <span class="mdl-textfield__error">Input is not a valid number!</span>
+          </div>
+
+          <button
+            type="button"
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="calculateVolume()"
+          >
+            Calculate Volume
+          </button>
+        </form>
+
+        <div id="result-section">
+          <h2>Volume Result:</h2>
+          <div id="volume-result"></div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

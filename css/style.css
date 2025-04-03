@@ -1,4 +1,156 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Angelo Garcia
+* Created on: march 2025
 * This file contains the CSS for index.html
 */
+/* Basic Reset */
+/* Universal Styles */
+*/* Universal Styles */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lightblue;
+        /* Soft background color */
+        font-family: Arial, sans-serif;
+        /* Clean font */
+        color: black;
+        /* Default text color */
+        padding: 20px;
+    }
+
+    /* Container for the Main Content */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        /* White background for the form */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        /* Soft shadow around content */
+    }
+
+    /* Header Section */
+    header {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        background-color: #0099cc;
+        /* Blue background */
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 2em;
+        text-transform: uppercase;
+        /* Make header text stand out more */
+    }
+
+    /* Form Styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        /* Dark text for readability */
+    }
+
+    input[type="number"] {
+        padding: 10px;
+        font-size: 1.1em;
+        border: 1px solid #0099cc;
+        /* Blue border for inputs */
+        border-radius: 5px;
+        outline: none;
+    }
+
+    input[type="number"]:focus {
+        border-color: #006699;
+        /* Darker blue when focused */
+    }
+
+    /* Button Styles */
+    button {
+        padding: 12px;
+        background-color: #0099cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #006699;
+        /* Slightly darker blue on hover */
+    }
+
+    /* Results Section */
+    #result-section {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #volume-result {
+        font-size: 1.5em;
+        background-color: #0099cc;
+        /* Blue background for result */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* Additional Design Enhancements */
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1em;
+        color: #333;
+    }
+
+    footer a {
+        color: #0099cc;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Small Screen Styles for Responsiveness */
+    @media (max-width: 768px) {
+        body {
+            padding: 15px;
+        }
+
+        .container {
+            padding: 15px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        input[type="number"] {
+            font-size: 1em;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+        }
+    }
